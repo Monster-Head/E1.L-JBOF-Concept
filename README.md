@@ -15,7 +15,7 @@ Last edited: N/A
 
 Core idea:
 
-THe core idea is to enhance the storage density in smaller formats like 1 and 2U. This idea is based off of the fact no one has built something like this to this day.
+The core idea is to enhance the storage density in smaller formats like 1 and 2U. This idea is based off of the fact no one has built something like this to this day.
 JBOF units like the Supermicro petascale are example this can work, even if their models use U.3 and U.2 SSD form factors.
 
 Front:
@@ -24,13 +24,13 @@ In the front there are hotswap bays to easily access the drives without pulling 
 
 Internals:
 
-A singular E1.L is from 9.5mm to 15mm thick, 38.4mm wide and 318.75mm long. By using the 9.5mm variant we can achieve our 44 slots layout. For cooling in the 1U layout 40mm fans would be used, while for the 2U 80mm fans would be used. Liquid cooling could also be used, but for this specific form factor and configuration it's not worth to do. As of now at least.
+A singular E1.L is from 9.5mm to 15mm thick, 38.4mm wide and 318.75mm long. By using the 9.5mm variant we can achieve our 44 slots layout. For cooling in the 1U layout 40mm fans would be used, while for the 2U 80mm fans would be used. Liquid cooling could also be used, but for this specific form factor and configuration it's not worth doing. As of now at least.
 
-The backplate will be the hardest thing to design since it has to accomodate 176 PCIe lanes (1 E1.L is PCIe x4 so 44*4=176) but not completely out the realm of possibilities.
+The backplate will be the hardest thing to design since it has to accommodate 176 PCIe lanes (1 E1.L is PCIe x4 so 44*4=176) but not completely out the realm of possibilities.
 
 To coordinate the PCIe lanes either PCIe switches or DPUs (Data Processing Unit), depending on the unit's intended purpose.
 
-For power I'd use a 2+2 configuration (2 PSUs are on, 2 PSs are on stand-by) and 1000w CRPS, to ensure stable and reliable power delivery. The use of multiple 1000w PSUs is due to the fact that an E1.L 9.5mm SSD can draw up to 25w, plus we have to account for other internal components like fans and various chips.
+For power I'd use a 2+2 configuration (2 PSUs are on, 2 PSUs are on stand-by) and 1000w CRPS, to ensure stable and reliable power delivery. The use of multiple 1000w PSUs is due to the fact that an E1.L 9.5mm SSD can draw up to 25w, plus we have to account for other internal components like fans and various chips.
 
 Connection:
 
