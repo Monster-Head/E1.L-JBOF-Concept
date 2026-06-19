@@ -3,7 +3,7 @@ Concept of a 1U/2U JBOF unit using E1.L enterprise SSD form factor
 
 ---------
 
-**Disclaimer: I'm not an electronical engineer. This is just a concept.**
+**Disclaimer: I'm not an engineer in this field. This is just a concept.**
 
 ---------
 
@@ -20,17 +20,17 @@ JBOF units like the Supermicro petascale are example this can work, even if thei
 
 Front:
 
-In the front there are hotswap bays to easily access the drives without pulling the whole rack out like a drawer, making serviceability fast and convenient even when the unit is powered. By putting the E1.L sideways there is a potential capacity of 44 slots, accounting for hotswap bay trays and seams to let air in. In the 2U model this works the same but since it's taller there is extra space to allow for extra holes to let even more air in.
+In the front there are hotswap bays to easily access the drives without pulling the whole rack out like a drawer, making serviceability fast and convenient even when the unit is powered. By putting the E1.L vertically there is a potential capacity of 44 slots, accounting for hotswap bay trays and seams to let air in. In the 2U model this works the same but since it's taller there is extra space to allow for extra holes to let even more air in.
 
 Internals:
 
-A singular E1.L is from 9.5mm to 15mm thick, 38.4mm wide and 318.75mm long. By uing the 9.5mm variant we can achieve our 44 slots layout. For cooling in the 1U layout 40mm fans would be used, while for the 2U 80mm fans would be used.
+A singular E1.L is from 9.5mm to 15mm thick, 38.4mm wide and 318.75mm long. By using the 9.5mm variant we can achieve our 44 slots layout. For cooling in the 1U layout 40mm fans would be used, while for the 2U 80mm fans would be used. Liquid cooling could also be used, but for this specific form factor and configuration it's not worth to do. As of now at least.
 
-The backplate will be the hardest thing to design since it has to accomodate 176 PCIe lanes (1 E1.L is PCIe x4 so 44*4=176) or 220 PCIe lanes, if Gen. 5 is used and so on, but not completely out the realm of possibilities.
+The backplate will be the hardest thing to design since it has to accomodate 176 PCIe lanes (1 E1.L is PCIe x4 so 44*4=176) but not completely out the realm of possibilities.
 
 To coordinate the PCIe lanes either PCIe switches or DPUs (Data Processing Unit), depending on the unit's intended purpose.
 
-For power I'd use a 2+2 configuration and 1000w PSUs, to ensure stable and reliable power delivery. The use of multiple 1000w PSUs is due to the fact that an E1.L 9.5mm SSD can draw up to 25w, plus we have to account for other internal components like fans and various chips.
+For power I'd use a 2+2 configuration (2 PSUs are on, 2 PSs are on stand-by) and 1000w CRPS, to ensure stable and reliable power delivery. The use of multiple 1000w PSUs is due to the fact that an E1.L 9.5mm SSD can draw up to 25w, plus we have to account for other internal components like fans and various chips.
 
 Connection:
 
@@ -38,11 +38,11 @@ I'd reccomend using 2-6 QSFP-DD modules, so that the module inside can be change
 
 Data density:
 
-Thanks to SSDs like the Solidigm D5-P5336 a capacity of 5.4PB per unit can be reached (122.88TB per SSD), though it's only for Gen.4 PCIe. For Gen.5 the D7-P5520 is the alternative, however it has a limit of 15.36TB per unit so the total comes out to 675.8TB per unit.
+Thanks to SSDs like the Solidigm D5-P5336 a capacity of 5.4PB per unit can be reached (122.88TB per SSD), though it's only for Gen.4 PCIe. For more IOPS the D7-P5520 is the alternative, however it has a limit of 15.36TB per unit so the total comes out to 675.8TB per unit.
 
 Conclusion:
 
-The 1U variant is made for more confined spaces, prioritizing density. The 2U variant is made for standard use with the added benefit of having better airflow.
+The 1U variant is made for maximum density with minimal footprint, while the 2U variant is a versatile option with the added benefit of better airflow.
 
 ---------
 
