@@ -38,6 +38,8 @@ Connection:
 
 I'd reccomend using 2-6 QSFP-DD modules, so that the module inside can be changed depending on needs. This covers anywhere from 100GbE to 800GbE. Alternatively standard RJ45 and SFP+ can be used to ensure connectivity with other systems lacking QSFP ports.
 
+For the QSFP ports I'd suggest putting them side by side if it's only 2 and stack them if you have 4 or 6, creating either a 2x2 or 2x3 layout. For SFP+ and RJ45 I'd suggest stacking them since one probably doesn't need more than 2 ports in this category.
+
 Data density:
 
 Thanks to SSDs like the Solidigm D5-P5336 a capacity of 5.4PB per unit can be reached (122.88TB per SSD), though it's only for Gen.4 PCIe. For more IOPS the D7-P5520 is the alternative, however it has a limit of 15.36TB per unit so the total comes out to 675.8TB per unit.
