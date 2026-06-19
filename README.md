@@ -31,8 +31,6 @@ The backplate will be the hardest thing to design since it has to accommodate 17
 To coordinate the PCIe lanes either PCIe switches or DPUs (Data Processing Unit), depending on the unit's intended purpose.
 
 For power I'd use a 2+2 configuration (2 PSUs are on, 2 PSUs are on stand-by) and 1000w CRPS, to ensure stable and reliable power delivery. The use of multiple 1000w PSUs is due to the fact that an E1.L 9.5mm SSD can draw up to 25w, plus we have to account for other internal components like fans and various chips and switches.
-To grant even more protection I'd also suggest the option to use 1-2 small batteries to use as UPS (Uninterrupted Power Supply) to have extra time to safely shut off the unit in case of an emergency, if a UPS isn't available or for small power outages that could damage the hardware if a UPS was absent.
-The battery/batteries would be located at the back near the CRPS modules to allow serviceability and replace them in the event one was failing due to age, use or other factors.
 
 Connection:
 
@@ -43,6 +41,14 @@ For the QSFP ports layout I'd suggest putting them side by side, if it's only 2,
 Data density:
 
 Thanks to SSDs like the Solidigm D5-P5336 a capacity of 5.4PB per unit can be reached (122.88TB per SSD), though it's only for Gen.4 PCIe. For more IOPS the D7-P5520 is the alternative, however it has a limit of 15.36TB per unit so the total comes out to 675.8TB per unit.
+
+Optionals:
+
+1-2 small batteries to use as UPS (Uninterrupted Power Supply) to have extra time to safely shut off the unit in case of an emergency, if a UPS isn't available or for small power outages that could damage the hardware if a UPS was absent.
+The battery/batteries would be located at the back near the CRPS modules to allow serviceability and replace them in the event one was failing due to age, use or other factors. Available in both the 1U and 2U.
+
+A small LCD diagnostic display able to show temps, power draw, drive status, connection and errors. This display can be pulled out the front panel through a small tab and once you're done it can be pushed back in. Situated in the bottom right or top right corner of the unit.
+Only usable on the 2U due to space restrictions.
 
 Conclusion:
 
