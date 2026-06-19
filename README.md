@@ -32,7 +32,7 @@ To coordinate the PCIe lanes either PCIe switches or DPUs (Data Processing Unit)
 
 For power I'd use a 2+2 configuration (2 PSUs are on, 2 PSUs are on stand-by) and 1000w CRPS, to ensure stable and reliable power delivery. The use of multiple 1000w PSUs is due to the fact that an E1.L 9.5mm SSD can draw up to 25w, plus we have to account for other internal components like fans and various chips and switches.
 To grant even more protection I'd also suggest the option to use 1-2 small batteries to have extra time to safely shut off the unit in case of an emergency or other use cases, however it's an option that one can choose to have.
-The battery or batteries would be located at the back near the CRPS modules to allow serviceability and replace them in the event one was failing due to age, use or other.
+The battery or batteries would be located at the back near the CRPS modules to allow serviceability and replace them in the event one was failing due to age, use or other factors.
 
 Connection:
 
