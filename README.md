@@ -54,6 +54,8 @@ Solidigm D7-P5520: https://www.solidigm.com/products/data-center/d7/p5520.html#f
 
 Supermicro petascale: https://www.supermicro.com/en/products/jbof
 
+My other repo: https://github.com/Monster-Head/High-density-JBOF-server-racks-concept-for-AI-and-Hyperscalers
+
 ---------
 
 ## License
