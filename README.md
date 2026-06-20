@@ -47,8 +47,8 @@ Optionals:
 1-2 small batteries to use as UPS (Uninterrupted Power Supply) to have extra time to safely shut off the unit in case of an emergency, if a UPS isn't available or for small power outages that could damage the hardware if a UPS was absent.
 The battery/batteries would be located at the back near the CRPS modules to allow serviceability and replace them in the event one was failing due to age, use or other factors. Available in both the 1U and 2U.
 
-A small LCD diagnostic display able to show temps, power draw, drive status, connection and errors. This display can be pulled out the front panel through a small tab and once you're done it can be pushed back in. Situated in the bottom right or top right corner of the unit.
-Only usable on the 2U due to space restrictions.
+A small LCD diagnostic display able to show temps, power draw, drive status, connection speeds and errors. This display can be pulled out the front panel through a small tab and once you're done it can be pushed back in. Situated in the bottom right or top right corner of the unit.
+Only available on the 2U due to space restrictions.
 
 Conclusion:
 
