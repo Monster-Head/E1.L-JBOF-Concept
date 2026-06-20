@@ -28,7 +28,7 @@ A singular E1.L is from 9.5mm to 15mm thick, 38.4mm wide and 318.75mm long. By u
 
 The backplate will be the hardest thing to design since it has to accommodate 176 PCIe lanes (1 E1.L is PCIe x4 so 44*4=176) but not completely out the realm of possibilities.
 
-To coordinate the PCIe lanes either PCIe switches or DPUs (Data Processing Unit), depending on the unit's intended purpose.
+To coordinate the PCIe lanes either PCIe switches or DPUs (Data Processing Unit) can be used, depending on the unit's intended purpose.
 
 For power I'd use a 2+2 configuration (2 PSUs are on, 2 PSUs are on stand-by) and 800-1000w CRPS, to ensure stable and reliable power delivery. The use of multiple 1000w PSUs is due to the fact that an E1.L 9.5mm SSD can draw up to 25w, plus we have to account for other internal components like fans and various chips and switches.
 
