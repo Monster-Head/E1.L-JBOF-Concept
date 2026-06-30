@@ -5,6 +5,8 @@ Concept of a 1U/2U JBOF unit using E1.L enterprise SSD form factor
 
 **Disclaimer: I'm not an engineer in this field. This is just a concept. If you have opinions or thoughts, feel free to share them in the "Discussions" tab.**
 
+**All trademarks, product names, and brands referenced (Solidigm, Supermicro, etc.) belong to their respective owners. This project is unaffiliated and non-commercial.**
+
 ---------
 
 Publishing date: 19/06/2026
