@@ -30,15 +30,15 @@ A singular E1.L is from 9.5mm to 15mm thick, 38.4mm wide and 318.75mm long. By u
 
 The backplate will be the hardest thing to design since it has to accommodate 176 PCIe lanes (1 E1.L is PCIe x4 so 44*4=176) but not completely out the realm of possibilities.
 
-To coordinate the PCIe lanes either PCIe switches or DPUs (Data Processing Unit) can be used, depending on the unit's intended purpose.
+To coordinate the PCIe lanes either PCIe switches or DPUs (Data Processing Unit) can be used, depending on the unit's intended purpose. PCIe switches generally are the more cost effective option and have lower power draw, while a DPU is usually more expensive, draws more power, but also allows to offload networking and security from the main CPU. 
 
-For power I'd use a 2+2 configuration (2 PSUs are on, 2 PSUs are on stand-by) and 800-1000w CRPS, to ensure stable and reliable power delivery. The use of multiple 1000w PSUs is due to the fact that an E1.L 9.5mm SSD can draw up to 25w, plus we have to account for other internal components like fans and various chips and switches.
+For power I'd use a 2+2 configuration (2 PSUs are on, 2 PSUs are on stand-by) and 800-1000w CRPS, to ensure stable and reliable power delivery. The use of multiple 1000w PSUs is due to the fact that an E1.L 9.5mm SSD can draw up to 25w, plus we have to account for other internal components like fans and the chips/switches mentioned earlier.
 
-Connection:
+Connectivity:
 
-I'd reccomend using 2-6 QSFP-DD modules, so that the module inside can be changed depending on needs. This covers anywhere from 100GbE to 800GbE. Alternatively standard RJ45 and SFP+ can be used to ensure connectivity with other systems lacking QSFP ports.
+I'd reccomend using 2-6 QSFP-DD modules, so that the module inside can be changed depending on needs. This covers anywhere from 100GbE to 800GbE. Alternatively standard RJ45 and SFP+ can be used to ensure backwards compatibility with other systems lacking QSFP ports.
 
-For the QSFP ports layout I'd suggest putting them side by side, if it's only 2, and stack them if you have 4 or 6, creating either a 2x2 or 2x3 layout. For SFP+ and RJ45 I'd suggest stacking them since one probably doesn't need more than 2 SFP+ and RJ45 ports.
+For the QSFP-DD ports layout I'd suggest putting them side by side, if it's only 2, and stack them if you have 4 or 6, creating either a 2x2 or 2x3 layout. For SFP+ and RJ45 I'd suggest stacking them since one probably doesn't need more than 2-4 SFP+ and RJ45 ports.
 
 Data density:
 
