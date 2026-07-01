@@ -28,7 +28,7 @@ Internals:
 
 A singular E1.L is from 9.5mm to 15mm thick, 38.4mm wide and 318.75mm long. By using the 9.5mm variant we can achieve our 44 slots layout. For cooling in the 1U layout 40mm fans would be used, while for the 2U 80mm fans would be used. Liquid cooling could also be used, but for this specific form factor and configuration it's not worth doing. As of now at least.
 
-The backplate will be the hardest thing to design since it has to accommodate 176 PCIe lanes (1 E1.L is PCIe x4 so 44*4=176) but not completely out the realm of possibilities.
+The backplane will be the hardest thing to design since it has to accommodate 176 PCIe lanes (1 E1.L is PCIe x4 so 44*4=176) but not completely out the realm of possibilities.
 
 To coordinate the PCIe lanes either PCIe switches or DPUs (Data Processing Unit) can be used, depending on the unit's intended purpose. PCIe switches generally are the more cost effective option and have lower power draw, while a DPU is usually more expensive, draws more power, but also allows to offload networking and security from the main CPU. 
 
