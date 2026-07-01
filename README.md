@@ -11,7 +11,7 @@ Concept of a 1U/2U JBOF unit using E1.L enterprise SSD form factor
 
 Publishing date: 19/06/2026
 
-Last edited: 30/06/2026
+Last edited: 01/07/2026
 
 ---------
 
